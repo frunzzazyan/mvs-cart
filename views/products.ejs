@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <h1>home</h1>
+    <a href="/cart">Cart</a>
+    <div class="products">
+        <% products.forEach(elem=>{%>
+            <div class="div-product">
+                <img src="<%= elem.image%>" alt="">
+                <h3><%= elem.title%></h3>
+                <h4><%= elem.description%></h4>
+                <h5><%= elem.price%> $</h5>
+                <button data-n="<%= elem.id%>">Add to Cart</button>
+            </div>
+            <hr>
+            <%})%>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>

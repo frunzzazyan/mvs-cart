@@ -1,0 +1,31 @@
+body{
+    padding-top: 100px;
+}
+.div-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    &>img{
+        width: 200px;
+        height: 200px;
+    }
+    &>h4{
+        width: 50%;
+    }
+    &>h5{
+        color: green;
+    }
+    &>button{
+        width: 30%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: 0;
+        transition: 1s;
+    }
+    &>button:hover{
+        background-color: rgb(82, 255, 63);
+        color: black;
+    }
+}

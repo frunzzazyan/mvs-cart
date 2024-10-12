@@ -1,0 +1,26 @@
+.cart{
+    background-color: rgb(235, 235, 235);
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &>img{
+        width: 200px;
+        height: 200px;
+    }
+    &>h4{
+        width: 30%;
+    }
+    &>button{
+        width: 30%;
+        height: 40px;
+        background-color: black;
+        color: white;
+        border: 0;
+        transition: 1s;
+    }
+    &>button:hover{
+        background-color: rgb(76, 27, 255);
+        color: black;
+    }
+}
